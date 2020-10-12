@@ -1,0 +1,19 @@
+<p>employee works!</p>
+<div class="jumbotron p-4">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Employee ID</th>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Employee Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.employeeId}} </td>
+                <td>{{employee.employeeName}}</td>
+                <td>{{employee.employeeSalary}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

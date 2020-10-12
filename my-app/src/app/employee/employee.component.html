@@ -1,0 +1,44 @@
+<h2>Employee Demo...!!!!!</h2>
+<pre>
+{{getMessage()}}
+Employeee 1
+Employee Id: {{employee1.employeeId}} 
+Employee Name: {{employee1.employeeName}}
+Employee Salary: {{employee1.employeeSalary}} 
+
+Employeee 2
+Employee Id: {{employee2.employeeId}} 
+Employee Name: {{employee2.employeeName}}
+Employee Salary: {{employee2.employeeSalary}} 
+
+
+Employeee 3
+<ul>
+    <li *ngFor='let employee of employees3'>
+        Employee Id: {{employee.employeeId}} 
+        Employee Name: {{employee.employeeName}}
+        Employee Salary: {{employee.employeeSalary}} 
+    </li>
+</ul>
+
+<table  class="table table-striped m-4" border="2px" >
+    <thead class="thead-dark"> 
+        <tr>
+            <td>Employee ID</td>
+            <td>Employee Name</td>
+            <td>Employee Salary</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let employee of employees3'>
+             <td>{{employee.employeeId}} </td>
+             <td>{{employee.employeeName}}</td>
+             <td>{{employee.employeeSalary | currency:'INR'}}</td>
+        </tr>
+    </tbody>
+</table>
+
+Employee Name :<input type="text"  [(ngModel)]=message  > {{message}}
+
+<button class="btn btn-primary"  (click)="myFunction()">Click Me...!!!</button>
+</pre>

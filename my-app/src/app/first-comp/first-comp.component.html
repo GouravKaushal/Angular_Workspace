@@ -1,0 +1,16 @@
+<h2>First-comp works!</h2>
+<ul>
+    <li *ngFor='let country of countries'>
+        {{country.name  | lowercase}}
+        <ul>
+            <li *ngFor='let state of country.states'>
+                {{state.name}}
+                <ul>
+                    <li *ngFor='let city of state.cities'>
+                        {{city}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
